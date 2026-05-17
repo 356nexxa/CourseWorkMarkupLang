@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>безЫмянный — Главные новости</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="page-home">
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <time class="current-date" datetime="2026-05-18">18 мая 2026</time>
+                <div class="stocks-ticker">
+                    <div class="ticker-item">
+                        <span class="ticker-label">USD</span>
+                        <span class="ticker-value">89.50</span>
+                        <span class="ticker-change down">↓</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-label">EUR</span>
+                        <span class="ticker-value">97.20</span>
+                        <span class="ticker-change up">↑</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-label">BRENT</span>
+                        <span class="ticker-value">78.45</span>
+                        <span class="ticker-change up">↑</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">безЫмянный</a>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li><a href="politics.html" class="nav-link">Политика</a></li>
+                        <li><a href="economy.html" class="nav-link">Экономика</a></li>
+                        <li><a href="culture.html" class="nav-link">Культура</a></li>
+                        <li><a href="about.html" class="nav-link">О проекте</a></li>
+                        <li><a href="news.html?id=1" class="nav-link">Новости</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="menu-toggle" aria-label="Меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="politics.html">Политика</a></li>
+                <li><a href="economy.html">Экономика</a></li>
+                <li><a href="culture.html">Культура</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="news.html?id=1">Новости</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="./imagine/mainweb.jfif"
+                    alt="">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-inner">
+                    <div class="hero-tag">
+                        <span class="tag-line"></span>
+                        <span class="tag-text">Экономика</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Цифровая<br>
+                        <em>трансформация</em><br>
+                        меняет мир
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Как технологии формируют будущее мировой экономики
+                    </p>
+
+                    <a href="#" onclick="return false;" class="hero-btn">
+                        <span>Читать статью</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span class="scroll-line"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция новостей -->
+        <section class="news-section">
+            <div class="container">
+                <!-- Заголовок секции -->
+                <div class="section-header">
+                    <div class="section-header-left">
+                        <span class="section-label">Новости</span>
+                        <h2 class="section-title">Последние публикации</h2>
+                    </div>
+                    <a href="#" class="section-more">
+                        Все новости
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Сетка новостей -->
+                <div class="news-grid">
+
+                    <!-- Карточка новости 1 -->
+                    <article class="news-card">
+                        <a href="news1.html" class="card-link">
+                            <div class="card-image-container">
+                                <div class="card-image">
+                                    <img src="./imagine/2.jfif"
+                                        alt="">
+                                </div>
+                                <div class="card-image-overlay"></div>
+                                <span class="card-category politics">Политика</span>
+                                <div class="card-read-badge">
+                                    <span>5 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <h3 class="card-title">Международный саммит завершился подписанием исторического
+                                        соглашения</h3>
+                                    <p class="card-excerpt">Лидеры 50 государств договорились о новых принципах
+                                        глобального сотрудничества в сфере экономики и безопасности</p>
+                                </div>
+                                <div class="card-footer">
+                                    <time class="current-date" datetime="2026-05-18">18 мая 2026</time>
+                                    <span class="card-arrow">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Карточка новости 2 -->
+                    <article class="news-card">
+                        <a href="news2.html" class="card-link">
+                            <div class="card-image-container">
+                                <div class="card-image">
+                                    <img src="./imagine/3.jfif"
+                                        alt="">
+                                </div>
+                                <div class="card-image-overlay"></div>
+                                <span class="card-category economy">Экономика</span>
+                                <div class="card-read-badge">
+                                    <span>4 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <h3 class="card-title">Центробанк сохранил ключевую ставку на прежнем уровне</h3>
+                                    <p class="card-excerpt">Регулятор ожидает замедления инфляции во втором полугодии и
+                                        прогнозирует стабилизацию рынка</p>
+                                </div>
+                                <div class="card-footer">
+                                    <time class="card-date" datetime="2026-05-18">18 мая 2026</time>
+                                    <span class="card-arrow">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Карточка новости 3 -->
+                    <article class="news-card">
+                        <a href="news3.html" class="card-link">
+                            <div class="card-image-container">
+                                <div class="card-image">
+                                    <img src="./imagine/4.jfif"
+                                        alt="">
+                                </div>
+                                <div class="card-image-overlay"></div>
+                                <span class="card-category culture">Культура</span>
+                                <div class="card-read-badge">
+                                    <span>6 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <h3 class="card-title">Эрмитаж представил уникальную выставку шедевров Возрождения
+                                    </h3>
+                                    <p class="card-excerpt">Экспозиция включает работы великих мастеров, которые впервые
+                                        покинули музеи Италии</p>
+                                </div>
+                                <div class="card-footer">
+                                    <time class="card-date" datetime="2026-05-18">18 мая 2026</time>
+                                    <span class="card-arrow">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Карточка новости 4 -->
+                    <article class="news-card">
+                        <a href="news4.html" class="card-link">
+                            <div class="card-image-container">
+                                <div class="card-image">
+                                    <img src="./imagine/5.jfif"
+                                        alt="">
+                                </div>
+                                <div class="card-image-overlay"></div>
+                                <span class="card-category economy">Экономика</span>
+                                <div class="card-read-badge">
+                                    <span>4 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <h3 class="card-title">Рекордный урожай зерновых укрепляет позиции экспорта</h3>
+                                    <p class="card-excerpt">Объём экспорта российского зерна превысил показатели
+                                        прошлого года на 15 процентов</p>
+                                </div>
+                                <div class="card-footer">
+                                    <time class="card-date" datetime="2026-05-18">18 мая 2026</time>
+                                    <span class="card-arrow">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Карточка новости 5 -->
+                    <article class="news-card">
+                        <a href="news5.html" class="card-link">
+                            <div class="card-image-container">
+                                <div class="card-image">
+                                    <img src="./imagine/6.jfif"
+                                        alt="">
+                                </div>
+                                <div class="card-image-overlay"></div>
+                                <span class="card-category culture">Культура</span>
+                                <div class="card-read-badge">
+                                    <span>3 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <h3 class="card-title">Российский фильм получил главный приз кинофестиваля</h3>
+                                    <p class="card-excerpt">Картина молодого режиссёра покорила жюри и получила
+                                        восторженные отзывы критиков</p>
+                                </div>
+                                <div class="card-footer">
+                                    <time class="card-date" datetime="2026-05-18">18 мая 2026</time>
+                                    <span class="card-arrow">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Карточка новости 6 -->
+                    <article class="news-card">
+                        <a href="news6.html" class="card-link">
+                            <div class="card-image-container">
+                                <div class="card-image">
+                                    <img src="./imagine/7.jfif"
+                                        alt="">
+                                </div>
+                                <div class="card-image-overlay"></div>
+                                <span class="card-category politics">Политика</span>
+                                <div class="card-read-badge">
+                                    <span>7 мин</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <h3 class="card-title">Программа развития регионов получила финансирование</h3>
+                                    <p class="card-excerpt">На модернизацию инфраструктуры выделено более 2 триллионов
+                                        рублей</p>
+                                </div>
+                                <div class="card-footer">
+                                    <time class="card-date" datetime="2026-05-18">18 мая 2026</time>
+                                    <span class="card-arrow">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+
+                <!-- Кнопка загрузить ещё -->
+                <div class="section-footer">
+                    <button class="load-more-btn">
+                        <span class="btn-text">Показать ещё</span>
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 5v14M5 12l7 7 7-7" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подписка -->
+        <section class="subscribe-section">
+            <div class="container">
+                <div class="subscribe-card">
+                    <div class="subscribe-content">
+                        <span class="subscribe-label">Рассылка</span>
+                        <h2 class="subscribe-title">Будьте в курсе <em>главных</em> событий</h2>
+                        <p class="subscribe-desc">Подпишитесь и получайте избранные новости каждое утро</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Введите email" required>
+                            <button type="submit">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">безЫмянный</a>
+                    <p>Независимое информационно-аналитическое издание</p>
+                </div>
+                <nav class="footer-nav">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="politics.html">Политика</a></li>
+                        <li><a href="economy.html">Экономика</a></li>
+                        <li><a href="culture.html">Культура</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contacts">
+                    <h4>Связаться</h4>
+                    <a href="mailto:info@obzor-news.ru">info@obzor-news.ru</a>
+                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 безЫмянный. </p>
+                <p><a class="validator-link" href="https://validator.w3.org/check?uri=referer" target="_blank"
+                        rel="noopener noreferrer">Валидация W3C</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

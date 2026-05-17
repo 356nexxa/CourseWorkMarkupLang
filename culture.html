@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Культура — безЫмянный</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Geologica:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Верхняя панель -->
+    <div class="top-bar top-bar-light">
+        <div class="container">
+            <div class="top-bar-content">
+                <time class="current-date" datetime="2026-05-18">18 мая 2026</time>
+                <div class="stocks-ticker">
+                    <div class="ticker-item">
+                        <span class="ticker-label">USD</span>
+                        <span class="ticker-value">89.50 ₽</span>
+                        <span class="ticker-change down">−0.45</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-label">EUR</span>
+                        <span class="ticker-value">97.20 ₽</span>
+                        <span class="ticker-change up">+0.32</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header header-light">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">безЫмянный</span>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="politics.html" class="nav-link">Политика</a></li>
+                        <li><a href="economy.html" class="nav-link">Экономика</a></li>
+                        <li><a href="culture.html" class="nav-link active">Культура</a></li>
+                        <li><a href="about.html" class="nav-link">О проекте</a></li>
+                        <li><a href="news.html?id=1" class="nav-link">Новости</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="menu-toggle" aria-label="Меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="politics.html">Политика</a></li>
+                <li><a href="economy.html">Экономика</a></li>
+                <li><a href="culture.html">Культура</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="news.html?id=1">Новости</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Заголовок раздела -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Культура</h1>
+                <p class="page-desc">Искусство, театр и кино</p>
+            </div>
+        </section>
+
+        <!-- Главная новость -->
+        <section class="featured-section">
+            <div class="container">
+                <article class="featured-card">
+                    <a href="#" onclick="return false;">
+                        <div class="featured-image">
+                            <img src="./imagine/19.jfif" alt="">
+                        </div>
+                        <div class="featured-body">
+                            <span class="featured-label">Главное</span>
+                            <h2>Эрмитаж представил уникальную выставку Возрождения</h2>
+                            <p>Впервые шедевры великих мастеров покинули Италию</p>
+                            <div class="featured-meta">
+                            <time  datetime="2026-05-18">18 мая 2026</time>
+                                <span>9 мин чтения</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Список новостей -->
+        <section class="news-section">
+            <div class="container">
+                <div class="news-list">
+                    <article class="news-item">
+                        <a href="#" onclick="return false;">
+                            <div class="news-item-image">
+                                <img src="./imagine/20.jfif" alt="">
+                            </div>
+                            <div class="news-item-body">
+                                <h3>Российский фильм получил приз Берлинале</h3>
+                                <p>Картина молодого режиссёра покорила жюри</p>
+                                <time  datetime="2026-05-18">18 мая 2026</time>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="news-item">
+                        <a href="#" onclick="return false;">
+                            <div class="news-item-image">
+                                <img src="./imagine/21.jfif" alt="">
+                            </div>
+                            <div class="news-item-body">
+                                <h3>Большой театр открывает новый сезон</h3>
+                                <p>Премьера оперы в современной интерпретации</p>
+                               <time  datetime="2026-05-18">18 мая 2026</time>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="news-item">
+                        <a href="#" onclick="return false;">
+                            <div class="news-item-image">
+                                <img src="./imagine/22.jfif" alt="">
+                            </div>
+                            <div class="news-item-body">
+                                <h3>Премия «Большая книга» объявила лауреатов</h3>
+                                <p>Жюри отметило лучшие произведения года</p>
+                                <time  datetime="2026-05-18">18 мая 2026</time>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="news-item">
+                        <a href="#" onclick="return false;">
+                            <div class="news-item-image">
+                                <img src="./imagine/23.jfif" alt="">
+                            </div>
+                            <div class="news-item-body">
+                                <h3>Новые имена на арт-сцене</h3>
+                                <p>Молодые художники представили работы</p>
+                                <time  datetime="2026-05-18">18 мая 2026</time>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <button class="load-more-btn">Показать ещё</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">безЫмянный</a>
+                    <p>Независимое информационно-аналитическое издание</p>
+                </div>
+                <nav class="footer-nav">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="politics.html">Политика</a></li>
+                        <li><a href="economy.html">Экономика</a></li>
+                        <li><a href="culture.html">Культура</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contacts">
+                    <h4>Связаться</h4>
+                    <a href="mailto:info@obzor-news.ru">info@obzor-news.ru</a>
+                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 безЫмянный. </p>
+                <p><a class="validator-link" href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener noreferrer">Валидация W3C</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

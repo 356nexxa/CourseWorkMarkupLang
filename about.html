@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте — безЫмянный</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Geologica:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Верхняя панель -->
+    <div class="top-bar top-bar-light">
+        <div class="container">
+            <div class="top-bar-content">
+               <time class="current-date" datetime="2026-05-18">18 мая 2026</time>
+                <div class="stocks-ticker">
+                    <div class="ticker-item">
+                        <span class="ticker-label">USD</span>
+                        <span class="ticker-value">89.50 ₽</span>
+                        <span class="ticker-change down">−0.45</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-label">EUR</span>
+                        <span class="ticker-value">97.20 ₽</span>
+                        <span class="ticker-change up">+0.32</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header header-light">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">безЫмянный</span>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="politics.html" class="nav-link">Политика</a></li>
+                        <li><a href="economy.html" class="nav-link">Экономика</a></li>
+                        <li><a href="culture.html" class="nav-link">Культура</a></li>
+                        <li><a href="about.html" class="nav-link active">О проекте</a></li>
+                        <li><a href="news.html?id=1" class="nav-link">Новости</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="menu-toggle" aria-label="Меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="politics.html">Политика</a></li>
+                <li><a href="economy.html">Экономика</a></li>
+                <li><a href="culture.html">Культура</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="news.html?id=1">Новости</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Заголовок -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Контакты</h1>
+                <p class="page-desc">Свяжитесь с нами</p>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts-section">
+            <div class="container">
+                <div class="contacts-grid">
+                    <div class="contact-card">
+                        <h2>Редакция</h2>
+                        <p>editor@obzor-news.ru</p>
+                    </div>
+                    <div class="contact-card">
+                        <h2>Реклама</h2>
+                        <p>ads@obzor-news.ru</p>
+                    </div>
+                    <div class="contact-card">
+                        <h2>Телефон</h2>
+                        <p>+7 (495) 123-45-67</p>
+                    </div>
+                    <div class="contact-card">
+                        <h2>Адрес</h2>
+                        <p>Москва, ул. Тверская, 15</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="form-section">
+            <div class="container container-narrow">
+                <div class="form-wrapper">
+                    <h2>Напишите нам</h2>
+                    <p>Есть вопрос или предложение? Заполните форму, и мы ответим в течение 24 часов.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <select id="subject" name="subject">
+                                <option value="">Выберите тему</option>
+                                <option value="ads">Реклама</option>
+                                <option value="author">Стать автором</option>
+                                <option value="error">Сообщить об ошибке</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+   <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">безЫмянный</a>
+                    <p>Независимое информационно-аналитическое издание</p>
+                </div>
+                <nav class="footer-nav">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="politics.html">Политика</a></li>
+                        <li><a href="economy.html">Экономика</a></li>
+                        <li><a href="culture.html">Культура</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contacts">
+                    <h4>Связаться</h4>
+                    <a href="mailto:info@obzor-news.ru">info@obzor-news.ru</a>
+                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 безЫмянный. </p>
+                <p><a class="validator-link" href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener noreferrer">Валидация W3C</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

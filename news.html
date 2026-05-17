@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новость — безЫмянный</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Geologica:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body class="page-news-template">
+    <div class="top-bar top-bar-light">
+        <div class="container">
+            <div class="top-bar-content">
+               <time class = "current-date" data-news-date datetime="2026-05-18">18 мая 2026</time>
+                <div class="stocks-ticker">
+                    <div class="ticker-item">
+                        <span class="ticker-label">USD</span>
+                        <span class="ticker-value">89.50 ₽</span>
+                        <span class="ticker-change down">−0.45</span>
+                    </div>
+                    <div class="ticker-item">
+                        <span class="ticker-label">EUR</span>
+                        <span class="ticker-value">97.20 ₽</span>
+                        <span class="ticker-change up">+0.32</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header header-light">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">безЫмянный</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Главная</a></li>
+                        <li><a href="politics.html" class="nav-link">Политика</a></li>
+                        <li><a href="economy.html" class="nav-link">Экономика</a></li>
+                        <li><a href="culture.html" class="nav-link">Культура</a></li>
+                        <li><a href="about.html" class="nav-link">О проекте</a></li>
+                        <li><a href="news.html?id=1" class="nav-link active">Новости</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="menu-toggle" aria-label="Меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="politics.html">Политика</a></li>
+                <li><a href="economy.html">Экономика</a></li>
+                <li><a href="culture.html">Культура</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="news.html?id=1">Новости</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="news-template-main" data-news-app>
+        <div class="news-template-grid">
+            <article class="news-article-panel" data-news-article>
+                <h1 class="news-article-title" data-news-title></h1>
+                <div class="news-meta-row">
+                   <span class="news-category-pill" data-news-category></span>
+                   <time  datetime="2026-05-18">18 мая 2026</time>
+                </div>
+                <img class="news-hero-image" data-news-image src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                <div class="news-content news-body" data-news-body></div>
+            </article>
+            <aside class="news-aside-panel">
+                <h2 class="news-aside-title">Другие материалы</h2>
+                <div data-news-aside></div>
+            </aside>
+        </div>
+    </main>
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">безЫмянный</a>
+                    <p>Независимое информационно-аналитическое издание</p>
+                </div>
+                <nav class="footer-nav">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="politics.html">Политика</a></li>
+                        <li><a href="economy.html">Экономика</a></li>
+                        <li><a href="culture.html">Культура</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contacts">
+                    <h4>Связаться</h4>
+                    <a href="mailto:info@obzor-news.ru">info@obzor-news.ru</a>
+                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 безЫмянный. </p>
+                <p><a class="validator-link" href="https://validator.w3.org/check?uri=referer" target="_blank"
+                        rel="noopener noreferrer">Валидация W3C</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
